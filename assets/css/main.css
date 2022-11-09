@@ -100,10 +100,10 @@ input, select, textarea {
 
 	body {
 		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #F46036 15%, #5f4d93 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #F46036 15%, #5f4d93 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #F46036 15%, #5f4d93 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #F46036 15%, #5f4d93 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2739,7 +2739,7 @@ input, select, textarea {
 /* Section/Article */
 
 section.special, article.special {
-	text-align: center;
+	text-align: left;
 }
 
 header p {
@@ -3280,6 +3280,34 @@ header.major h2 {
 					#header.alt h1 {
 						font-size: 2.5em;
 					}
+
+			/* Section/Article */
+
+			header br {
+				display: none;
+			}
+
+			header.major h2 {
+				font-size: 2.5em;
+			}
+
+				header.major h2 + p {
+					font-size: 1.5em;
+				}
+
+		/* Features */
+
+			.features article .image {
+				display: block;
+				margin: 0 0 2.25em 0;
+				padding-right: 0;
+				width: 100%;
+			}
+
+			.features article .inner {
+				display: block;
+				width: 100%;
+			}
 		}
 
 		@media screen and (max-width: 480px) {
