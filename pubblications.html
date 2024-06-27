@@ -20,9 +20,10 @@
 
 					<nav id="nav">
 						<ul>
+							<li><a href="index.html" class="active">Home</a></li>
 							<li><a href="#model_reduction" class="active">Model reduction</a></li>
-							<li><a href="#switching_control">Switcing control</a></li>
-							<li><a href="#other">Other Projects</a></li>
+							<li><a href="#switching_control">Switching control</a></li>
+							<li><a href="#other">Publications</a></li>
 							<li><a href="#affiliations">Affiliations</a></li>
 						</ul>
 					</nav>
@@ -43,6 +44,11 @@
 						</section>
 						<section id="model_reduction" class="main">
 							<h2>Model reduction for probabilistic systems</h2>
+							<p>Finding simpler descriptions for dynamical models is a fundamental task in many scientific fields, including quantum physics. The main focus of this research area is to find reduced order models of quantum systems of interest while preserving the physical constraints given by quantum mechanics. When looking for reduced order models one could look for smaller description that reproduce the behavior of the original model exactly or smaller models that reproduce the behavior with a given accuracy. Both these directions are being investigated in our group.<br>
+
+							The possible application of these model reduction techniques is manifold. Just to name a few: (1) finding better and more efficient ways of simulating quantum models on both classical and quantum computers; (2) obtain a better understanding of complex systems while focusing on simpler to study models; (3) constructing reduced-order state observers that allow for more efficient implementation of quantum controllers.<br>
+							
+							Furthermore, this research area is tightly connected to relevant areas of interest for control system theory, such as hidden Markov models, positive systems, and complex networks.</p>
 							<section id="first" class="main special">
 								<ul class="features">
 									<article>
@@ -83,7 +89,7 @@
 										<div class="inner">
 											<h4><a href="https://arxiv.org/abs/2209.11709">Switching stabilization of quantum stochastic master equations</a></h4>
 											<h5>Weichao Liang, Grigoletto Tommaso, and Francesco Ticozzi. </h5>
-											<p>Arxiv preprint - Submitted</p>
+											<p>Automatica 2024</p>
 										</div>
 									</article>
 									
@@ -98,7 +104,7 @@
 								</ul>
 							</section>
 						</section>
-						<section id="other" class="main">
+						<!-- <section id="other" class="main">
 							<h2>Other projects</h2>
 							<section id="first" class="main special">
 								<ul class="features">
@@ -112,20 +118,87 @@
 									</article>
 								</ul>
 							</section>
+						</section> -->
+
+						<section id="other" class="main">
+							<h2>Complete list from arXiv</h2>
+							<section id="first" class="main special">
+								
+								<ul id="paperlist">
+
+								</ul>
+								
+								<!-- 
+									Thanks @ Marco Peruzzo for this script! 
+									-->
+
+									<script>
+
+										// Function to fetch XML data from the provided URL
+									function fetchXMLData(url) {
+									  return fetch(url)
+										.then(response => response.text())
+										.then(data => {
+										  const parser = new DOMParser();
+										  const xmlDoc = parser.parseFromString(data, "text/xml");
+										  return xmlDoc;
+										});
+									}
+									
+									// Function to extract and display the title, author, and uploading year of each entry
+									function displayEntries(xmlDoc) {
+									  const entries = xmlDoc.querySelectorAll("entry");
+									  const paperListUl = document.getElementById("paperlist");
+									
+									  entries.forEach(entry => {
+										const title = entry.querySelector("title").textContent;
+										const link = entry.querySelector("id").textContent;
+										const authors = Array.from(entry.querySelectorAll("author")).map(author => author.textContent).join(", ");
+										const uploadingDate = entry.querySelector("published").textContent;
+										const uploadingYear = new Date(uploadingDate).getFullYear();
+										const paperLi = document.createElement("li");
+									const journalNode = entry.querySelector("arxiv\\:journal_ref, journal_ref");
+										const journal = journalNode ? journalNode.textContent : uploadingYear;
+									 const doiLinkNode = entry.querySelector("link[title='doi']");
+										const journalLink = doiLinkNode ? doiLinkNode.getAttribute("href") : null;
+									
+										paperLi.classList.add("paper");
+									var str=title +"<br>"+authors +", "+journal +". ";//+ " <a href='"+link+"'>[arxiv]</a>";
+									if (journalLink) {
+										  
+									str+="<a href='"+journalLink+"'>[online]</a>"
+										}
+									str=str+ " <a href='"+link+"'>[arxiv]</a>";
+										paperLi.innerHTML= str;
+										   
+										paperListUl.appendChild(paperLi);
+									  });
+									}
+									
+									// Fetch XML data from the provided URL and display the entries in the paperlist div
+									const apiUrl = "https://export.arxiv.org/api/query?search_query=au:Grigoletto_T&start=0&max_results=2000&sortBy=submittedDate";
+									fetchXMLData(apiUrl)
+									  .then(xmlDoc => displayEntries(xmlDoc))
+									  .catch(error => console.error("Error fetching XML data:", error));
+									
+									</script>
+
+							</section>
 						</section>
+
+						
 
 				<section id="affiliations" class="main">
 					<header class="major">
-						<h2>Affiliations</h2>
+						<h2>Affiliations and collaborations</h2>
 					</header>
 					<ul class="features">
 						<li>
 							<a href="https://www.unipd.it/en/"><span class="features"><img src="images/UNIPD-logo.png" width="50%"/></span></a>
 							<h3><a href="https://www.unipd.it/en/">University of Padua</a></h3>
 							<p>
-								I'm pursuing my Ph.D. in the <a href="http://automatica.dei.unipd.it/">Automation group</a> at the 
-								<a href="https://www.dei.unipd.it/home-page">Department of Information Engeeniring</a> of the University of Padua 
-								under the supervision of <a href="http://www.dei.unipd.it/~ticozzi/F._Ticozzis_Website/Welcome.html">Prof. Francesco Ticozzi.</a> 
+								I belong to the <a href="http://automatica.dei.unipd.it/">Automatica group</a> at the 
+								<a href="https://www.dei.unipd.it/home-page">Department of Information Engeeniring</a> of the University of Padua and part of the <a href="https://quantumdynamics.dei.unipd.it/">Quantum Dynamics, Information and Control group</a> lead by <a href="https://quantumdynamics.dei.unipd.it/francesco-personal-page/">Prof. Francesco Ticozzi.</a> 
 							</p>
 						</li>
 						<li>
@@ -135,45 +208,27 @@
 								of <a href="https://physics.dartmouth.edu/people/lorenza-viola">Prof. Lorenza Viola</a>, working closely with <a href="https://sites.dartmouth.edu/lorenzaviola-group/">her research group</a>.<br>
 							</p>
 						</li>
+						<!-- <li>
+							<span class="features"><img src="images/logo_imt.jpg" width="50%"/></span>
+							<h3><a href="https://home.dartmouth.edu/">Dartmouth College</h3></a>
+							<p>I have been collaborating with <a href="https://perso.math.univ-toulouse.fr/pellegrini/">Professor Clément Pellegrini</a> from Laboratoire de Statistique et Probabilités
+								Université Paul Sabatier 
+							</p>
+						</li>
+						<li>
+							<span class="features"><img src="images/inria_logo.png" width="50%"/></span>
+							<h3><a href="https://home.dartmouth.edu/">Inria Paris</h3></a>
+							<p>I have been collaborating with Professor Alain Sarlette from Inria Paris. 
+							</p>
+						</li> -->
 					</ul>
 				</section>
-
-						<div class="features">
-							<ul class="actions">
-								<li><a href="index.html" class="button">Back to home page</a></li>
-							</ul>
-						</div>
 						
 					</div>
 
 				
 				<!-- Footer -->
 				<footer id="footer">
-					<section>
-						<p>If you are interested in my work, have a look at my CV or contact me via email.</p>
-						<ul class="actions special">
-							<li><a href="download/CV.pdf" class="button">Download my CV</a></li>
-						</ul>
-					</section>
-					<section>
-						<h2>Contacts</h2>
-						<dl class="alt">
-							<dt>Email</dt>
-							<dd><a href="emailto:tommaso.grigoletto@phd.unipd.it">tommaso.grigoletto@phd.unipd.it</a></dd>
-							<dt>Address</dt>
-							<dd>Via Gradenigo 6 &bull; Padova, 35131 &bull; Italy</dd>
-							<dt>ORCID</dt>
-							<dd><a href="https://orcid.org/0000-0002-2891-3528">0000-0002-2891-3528</a></dd>
-							<ul class="icons">
-								<!-- <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
-								<li><a href="https://scholar.google.com/citations?user=uL1W4vEAAAAJ&hl=it&oi=ao" class="icon brands fa-google alt"><span class="label">Google Scholar</span></a></li>
-								<li><a href="https://github.com/tommygrigo" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li> -->
-							</ul>
-						</dl>
-					</section>
 					<p class="copyright">This page is hosetd on <a href="https://pages.github.com/">GitHub Pages</a>.</p> 
 				</footer>
 
