@@ -194,12 +194,15 @@
 									}
 									
 									// Fetch XML data from the provided URL and display the entries in the paperlist div
-									const apiUrl = "https://export.arxiv.org/api/query?search_query=au:Grigoletto_T&start=0&max_results=2000&sortBy=submittedDate";
+									//const apiUrl = "https://export.arxiv.org/api/query?search_query=au:Grigoletto_T&start=0&max_results=2000&sortBy=submittedDate";
+									//const apiUrl = "https://export.arxiv.org/api/query?search_query=au:%22tommaso+grigoletto%22&start=0&max_results=2000&sortBy=submittedDate";
+									const apiUrl = "./pubblications.xml";
 									fetchXMLData(apiUrl)
 									  .then(xmlDoc => displayEntries(xmlDoc))
 									  .catch(error => console.error("Error fetching XML data:", error));
 									
 									</script>
+
 
 							</section>
 						</section>

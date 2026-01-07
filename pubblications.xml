@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/6s5D7NwPUHKFPkD3gl7hLMTIvXk</id>
+  <title>arXiv Query: search_query=au:"tommaso grigoletto"&amp;id_list=&amp;start=0&amp;max_results=2000</title>
+  <updated>2026-01-07T16:32:35Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=au:%22tommaso+grigoletto%22&amp;start=0&amp;max_results=2000&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>2000</opensearch:itemsPerPage>
+  <opensearch:totalResults>13</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2510.25546v1</id>
+    <title>Model Reduction for Controlled Quantum Markov Dynamics</title>
+    <updated>2025-10-29T14:11:48Z</updated>
+    <link href="https://arxiv.org/abs/2510.25546v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.25546v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We consider the problem of model reduction for Markovian quantum systems whose dynamics are described by a time-dependent Lindblad generator -- notably, as arising in the presence of external control. Our approach, which builds upon Krylov operator subspaces and operator-algebraic techniques introduced for time-independent generators, returns a reduced model that reproduces exactly the evolution of observables of interest and is guaranteed to be in Lindblad form.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-29T14:11:48Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Tommaso Grigoletto</name>
+    </author>
+    <author>
+      <name>Lorenza Viola</name>
+    </author>
+    <author>
+      <name>Francesco Ticozzi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.20675v1</id>
+    <title>Computing time-dependent reduced models for classical and quantum dynamics</title>
+    <updated>2025-10-23T15:51:00Z</updated>
+    <link href="https://arxiv.org/abs/2510.20675v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.20675v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper introduces a novel method for approximating the dynamics of a large autonomous system projected onto a fixed subspace. The core contribution is a novel recursive algorithm to construct an effective time-dependent generator that is polynomial in the time variable, ensuring accuracy for short time scales. The derivation is based on the Taylor expansion of the exponential map and a new result for computing the time-ordered exponential of polynomial generators. This work is motivated by the challenge of deriving time-convolutionless master equations in quantum physics and the proposed method offers an alternative to typical derivations based on expansions in the coupling strength. The resulting approximation is accurate for small times, does not require a weak-coupling assumption, performs better than a truncation of the exponential map at low orders, and crucially, guarantees a completely positive and trace-preserving map at the lowest orders. The proposed method is validated against several prototypical models: a dephasing spin-boson model, a central spin model, and an Ising spin chain.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-23T15:51:00Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Tommaso Grigoletto</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.24636v1</id>
+    <title>Reconstructing Quantum States and Expectations via Dynamical Tomography</title>
+    <updated>2025-09-29T11:43:52Z</updated>
+    <link href="https://arxiv.org/abs/2509.24636v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.24636v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>When the dynamics of a quantum system of interest is known, an informationally-complete set of observables is not needed for state reconstruction via tomographic techniques: letting the system evolve before performing the measurement allows one to effectively extend the available ways to probe the system. This idea leads to dynamical quantum tomography, whose feasibility we characterize for general quantum dynamics using Krylov-based methods. Specializing to Markovian ones, we also provide deterministic tests, and randomized ones to effectively assess parametric dynamics. The limits of the methods are explored comparing unitary and open dynamics when a single observable is available, and the set of observables whose expectation can be reconstructed from the available ones characterized. The framework is illustrated with applications to a spin chain (with or without dissipation) and an electron-nuclear system</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-29T11:43:52Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Marco Peruzzo</name>
+    </author>
+    <author>
+      <name>Tommaso Grigoletto</name>
+    </author>
+    <author>
+      <name>Francesco Ticozzi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.13885v3</id>
+    <title>Quantum model reduction for continuous-time quantum filters</title>
+    <updated>2025-09-16T15:17:01Z</updated>
+    <link href="https://arxiv.org/abs/2501.13885v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.13885v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The use of quantum stochastic models is widespread in dynamical reduction, simulation of open systems, feedback control and adaptive estimation. In many applications only part of the information contained in the filter's state is actually needed to reconstruct the target observable quantities; thus, filters of smaller dimensions could be in principle implemented to perform the same task.In this work, we propose a systematic method to find, when possible, reduced-order quantum filters that are capable of exactly reproducing the evolution of expectation values of interest. In contrast with existing reduction techniques, the reduced model we obtain is exact and in the form of a Belavkin filtering equation, ensuring physical interpretability.This is attained by leveraging tools from the theory of both minimal realization and non-commutative conditional expectations. The proposed procedure is tested on prototypical examples, laying the groundwork for applications in quantum trajectory simulation and quantum feedback control.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-23T17:57:52Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Annales Henri Poincaré (2025)</arxiv:journal_ref>
+    <author>
+      <name>Tommaso Grigoletto</name>
+    </author>
+    <author>
+      <name>Clément Pellegrini</name>
+    </author>
+    <author>
+      <name>Francesco Ticozzi</name>
+    </author>
+    <arxiv:doi>10.1007/s00023-025-01622-7</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s00023-025-01622-7" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.13668v1</id>
+    <title>Reconstructing Quantum States from Local Observation: A Dynamical Viewpoint</title>
+    <updated>2025-01-23T13:54:10Z</updated>
+    <link href="https://arxiv.org/abs/2501.13668v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.13668v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We analyze the problem of reconstructing an unknown quantum state of a multipartite system from repeated measurements of local observables. In particular, via a system-theoretic observability analysis, we show that, even when the initial state is not uniquely determined for a static system, this can be reconstructed if we leverage the system's dynamics. The choice of dynamical generators and the effect of finite samples is discussed, along with an illustrative example.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-23T13:54:10Z</published>
+    <arxiv:comment>This work has been presented at the Conference on Decision and Control 2024, Milan, Italy. The paper will appear in the conference proceedings</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>2024 IEEE 63rd Conference on Decision and Control (CDC), Milan, Italy, 2024, pp. 775-780</arxiv:journal_ref>
+    <author>
+      <name>Marco Peruzzo</name>
+    </author>
+    <author>
+      <name>Tommaso Grigoletto</name>
+    </author>
+    <author>
+      <name>Francesco Ticozzi</name>
+    </author>
+    <arxiv:doi>10.1109/CDC56724.2024.10886855</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/CDC56724.2024.10886855" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.05102v3</id>
+    <title>Exact Model Reduction for Continuous-Time Open Quantum Dynamics</title>
+    <updated>2025-07-23T13:59:25Z</updated>
+    <link href="https://arxiv.org/abs/2412.05102v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.05102v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We consider finite-dimensional many-body quantum systems described by time-independent Hamiltonians and Markovian master equations, and present a systematic method for constructing smaller-dimensional, reduced models that exactly reproduce the time evolution of a set of initial conditions or observables of interest. Our approach exploits Krylov operator spaces and their extension to operator algebras, and may be used to obtain reduced linear models of minimal dimension, well-suited for simulation on classical computers, or reduced quantum models that preserve the structural constraints of physically admissible quantum dynamics, as required for simulation on quantum computers. Notably, we prove that the reduced quantum-dynamical generator is still in Lindblad form. By introducing a new type of observable-dependent symmetries, we show that our method provides a non-trivial generalization of techniques that leverage symmetries, unlocking new reduction opportunities. We quantitatively benchmark our method on paradigmatic open many-body systems of relevance to condensed-matter and quantum-information physics. In particular, we demonstrate how our reduced models can quantitatively describe decoherence dynamics in central-spin systems coupled to structured environments, magnetization transport in boundary-driven dissipative spin chains, and unwanted error dynamics on information encoded in a noiseless quantum code.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-06T15:00:58Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 9, 1814 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Tommaso Grigoletto</name>
+    </author>
+    <author>
+      <name>Yukuan Tao</name>
+    </author>
+    <author>
+      <name>Francesco Ticozzi</name>
+    </author>
+    <author>
+      <name>Lorenza Viola</name>
+    </author>
+    <arxiv:doi>10.22331/q-2025-07-29-1814</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2025-07-29-1814" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.11696v4</id>
+    <title>Robust, positive and exact model reduction via monotone matrices</title>
+    <updated>2025-09-17T09:43:06Z</updated>
+    <link href="https://arxiv.org/abs/2406.11696v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.11696v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This work focuses on the problem of exact model reduction of positive linear systems, by leveraging minimal realization theory. While determining the existence of a positive reachable realization remains in general an open problem, we are able to fully characterize the cases in which the new model is obtained with non-negative reduction matrices, and hence positivity of the reduced model is robust with respect to small perturbations of the original system. The characterization is obtained by specializing monotone matrix theory to positive matrices. In addition, we provide a systematic method to construct positive reductions also when minimal ones are not available, by exploiting algebraic techniques.</summary>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-17T16:13:21Z</published>
+    <arxiv:primary_category term="eess.SY"/>
+    <author>
+      <name>Marco Cortese</name>
+    </author>
+    <author>
+      <name>Tommaso Grigoletto</name>
+    </author>
+    <author>
+      <name>Francesco Ticozzi</name>
+    </author>
+    <author>
+      <name>Augusto Ferrante</name>
+    </author>
+    <arxiv:doi>10.1109/TAC.2025.3569190</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/TAC.2025.3569190" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.12575v2</id>
+    <title>Exact model reduction for discrete-time conditional quantum dynamics</title>
+    <updated>2024-05-09T06:15:41Z</updated>
+    <link href="https://arxiv.org/abs/2403.12575v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.12575v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Leveraging an algebraic approach built on minimal realizations and conditional expectations in quantum probability, we propose a method to reduce the dimension of quantum filters in discrete-time, while maintaining the correct distributions on the measurement outcomes and the expectations of some relevant observable. The method is presented for general quantum systems whose dynamics depend on measurement outcomes, hinges on a system-theoretic observability analysis, and is tested on prototypical examples.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-19T09:34:13Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>IEEE Control Systems Letters 8 (2024) 550-555</arxiv:journal_ref>
+    <author>
+      <name>Tommaso Grigoletto</name>
+    </author>
+    <author>
+      <name>Francesco Ticozzi</name>
+    </author>
+    <arxiv:doi>10.1109/LCSYS.2024.3399100</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/LCSYS.2024.3399100" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.06319v2</id>
+    <title>Model Reduction for Quantum Systems: Discrete-time Quantum Walks and Open Markov Dynamics</title>
+    <updated>2025-06-06T10:00:43Z</updated>
+    <link href="https://arxiv.org/abs/2307.06319v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.06319v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A general approach to obtain reduced models for a wide class of discrete-time quantum systems is proposed. The obtained models not only reproduce exactly the output of a given quantum model, but are also guaranteed to satisfy physical constraints, namely complete positivity and preservation of total probability. A fundamental framework for exact model reduction of quantum systems is constructed leveraging on algebraic methods, as well as novel results on quantum conditional expectations in finite-dimensions. The proposed reduction algorithm is illustrated and tested on prototypical examples, including the quantum walk realizing Grover's algorithm.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-12T17:30:12Z</published>
+    <arxiv:comment>20 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>IEEE Transactions on Information Theory, 2025</arxiv:journal_ref>
+    <author>
+      <name>Tommaso Grigoletto</name>
+    </author>
+    <author>
+      <name>Francesco Ticozzi</name>
+    </author>
+    <arxiv:doi>10.1109/TIT.2025.3601118</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/TIT.2025.3601118" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2209.11709v2</id>
+    <title>Dissipative Feedback Switching for Quantum Stabilization</title>
+    <updated>2024-03-12T06:36:58Z</updated>
+    <link href="https://arxiv.org/abs/2209.11709v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2209.11709v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Switching controlled dynamics allows for fast, flexible control design methods for quantum stabilization of pure states and subspaces, which naturally include both Hamiltonian and dissipative control actions. A novel approach to measurement-based, dissipative feedback design is introduced, and extends the applicability of switching techniques with respect to previously proposed ones, as it does not need stringent invariance assumptions, while it still avoids undesired chattering or Zeno effects by modulating the control intensity. When the switching dynamics do leave the target invariant, on the other hand, we show that exponential convergence to the target can be enforced without modulation, and switching times that can be either fixed or stochastic with hysteresis to avoid chattering. The effectiveness of the proposed methods is illustrated via numerical simulations of simple yet paradigmatic examples, demonstrating how switching strategies converge faster than open-loop engineered dissipation.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-09-23T16:37:15Z</published>
+    <arxiv:comment>27 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Automatica, vol. 165, 2024, 111659</arxiv:journal_ref>
+    <author>
+      <name>Weichao Liang</name>
+    </author>
+    <author>
+      <name>Tommaso Grigoletto</name>
+    </author>
+    <author>
+      <name>Francesco Ticozzi</name>
+    </author>
+    <arxiv:doi>10.1016/j.automatica.2024.111659</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.automatica.2024.111659" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2208.05968v2</id>
+    <title>Algebraic Reduction of Hidden Markov Models</title>
+    <updated>2023-05-19T09:43:26Z</updated>
+    <link href="https://arxiv.org/abs/2208.05968v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2208.05968v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The problem of reducing a Hidden Markov Model (HMM) to one of smaller dimension that exactly reproduces the same marginals is tackled by using a system-theoretic approach. Realization theory tools are extended to HMMs by leveraging suitable algebraic representations of probability spaces. We propose two algorithms that return coarse-grained equivalent HMMs obtained by stochastic projection operators: the first returns models that exactly reproduce the single-time distribution of a given output process, while in the second the full (multi-time) distribution is preserved. The reduction method exploits not only the structure of the observed output, but also its initial condition, whenever the latter is known or belongs to a given subclass. Optimal algorithms are derived for a class of HMM, namely observable ones.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-08-11T02:46:05Z</published>
+    <arxiv:comment>16 pages, no figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <arxiv:journal_ref>IEEE Transactions on Automatic Control, Volume: 68, Issue: 12, 2023</arxiv:journal_ref>
+    <author>
+      <name>Tommaso Grigoletto</name>
+    </author>
+    <author>
+      <name>Francesco Ticozzi</name>
+    </author>
+    <arxiv:doi>10.1109/TAC.2023.3279209</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/TAC.2023.3279209" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2012.08712v2</id>
+    <title>Stabilization via feedback switching for quantum stochastic dynamics</title>
+    <updated>2021-02-10T14:14:52Z</updated>
+    <link href="https://arxiv.org/abs/2012.08712v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2012.08712v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose a new method for pure-state and subspace preparation in quantum systems, which employs the output of a continuous measurement process and switching dissipative control to improve convergence speed, as well as robustness with respect to the initial conditions. In particular, we prove that the proposed closed-loop strategy makes the desired target globally asymptotically stable both in mean and almost surely, and we show it compares favorably against a time-based and a state-based switching control law, with significant improvements in the case of faulty initialization.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-12-16T02:54:53Z</published>
+    <arxiv:comment>6 pages, 4 figures, updated main results and proofs</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>IEEE Control Systems Letters 6, 235-240, 2022</arxiv:journal_ref>
+    <author>
+      <name>Tommaso Grigoletto</name>
+    </author>
+    <author>
+      <name>Francesco Ticozzi</name>
+    </author>
+    <arxiv:doi>10.1109/LCSYS.2021.3065603</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/LCSYS.2021.3065603" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2009.02508v1</id>
+    <title>Image compression by means of the multidimensional circulant covariance extension problem -- Revisited</title>
+    <updated>2020-09-05T10:22:16Z</updated>
+    <link href="https://arxiv.org/abs/2009.02508v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2009.02508v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We revisit the image compression problem using the framework introduced by Ringh, Karlsson and Lindquist. More precisely, we explore the possibility to consider a family of objective functions and a different way to design the prior in the corresponding multidimensional circulant covariance extension problem. The latter leads to refined compression paradigms.</summary>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-09-05T10:22:16Z</published>
+    <arxiv:primary_category term="math.OC"/>
+    <author>
+      <name>Tommaso Benciolini</name>
+    </author>
+    <author>
+      <name>Tommaso Grigoletto</name>
+    </author>
+    <author>
+      <name>Mattia Zorzi</name>
+    </author>
+  </entry>
+</feed>
