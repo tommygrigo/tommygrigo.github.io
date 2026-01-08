@@ -15,7 +15,7 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<h1><a href="index.html">Tommaso Grigoletto</a>: Research</h1>
-						<!-- <p>Complete list of my pubblications</p> -->
+						<!-- <p>Complete list of my publications</p> -->
 					</header>
 
 					<nav id="nav">
@@ -181,7 +181,7 @@
 										const journalLink = doiLinkNode ? doiLinkNode.getAttribute("href") : null;
 									
 										paperLi.classList.add("paper");
-									var str=title +"<br>"+authors +", "+journal +". ";//+ " <a href='"+link+"'>[arxiv]</a>";
+									var str="<em>"+title +"</em><br>"+authors +", "+journal +". ";//+ " <a href='"+link+"'>[arxiv]</a>";
 									if (journalLink) {
 										  
 									str+="<a href='"+journalLink+"'>[online]</a>"
@@ -193,10 +193,9 @@
 									  });
 									}
 									
-									// Fetch XML data from the provided URL and display the entries in the paperlist div
-									//const apiUrl = "https://export.arxiv.org/api/query?search_query=au:Grigoletto_T&start=0&max_results=2000&sortBy=submittedDate";
-									//const apiUrl = "https://export.arxiv.org/api/query?search_query=au:%22tommaso+grigoletto%22&start=0&max_results=2000&sortBy=submittedDate";
-									const apiUrl = "./pubblications.xml";
+									//URL TO DOWNLOAD XML FROM "https://export.arxiv.org/api/query?search_query=au:%22tommaso+grigoletto%22&start=0&max_results=2000&sortBy=submittedDate";
+									
+									const apiUrl = "./publications.xml";
 									fetchXMLData(apiUrl)
 									  .then(xmlDoc => displayEntries(xmlDoc))
 									  .catch(error => console.error("Error fetching XML data:", error));
