@@ -54,11 +54,11 @@ async function displayEntries(xmlDoc) {
     const paperLi = document.createElement("li");
 
     paperLi.classList.add("paper");
-    var str="<strong>"+title +"</strong><br>"+authors +", <i>"+journal +"</i>. ";
+    var str="<strong><em>"+title +"</em></strong><br><small>"+authors +"<br> <i>"+journal +"</i>.</small> <br>";
     if (journalLink) {    
-      str+="<a href='"+journalLink+"'>[online]</a>"
+      str+="<a href='"+journalLink+"' class='button small' style='margin-right:10px;'>online</a>"
     }
-    str=str+ " <a href='"+link+"'>[arxiv]</a>";
+    str=str+ " <a href='"+link+"' class='button small'>ar<i class='ai ai-arxiv alt'>iv</i></a><br>";
     paperLi.innerHTML = str;
         
     paperListUl.appendChild(paperLi);
