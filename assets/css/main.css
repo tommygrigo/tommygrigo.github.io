@@ -2722,6 +2722,7 @@ input, select, textarea {
 /* Icons */
 
 	ul.icons {
+		font-size: 2em;
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
@@ -3456,14 +3457,14 @@ header.major h2 {
 					font-size: 0.9em;
 				}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 980px) {
 
 			#nav {
-				display: none;
+				display: block !important;
 			}
 
 				#nav + #main {
-					padding-top: 0;
+					padding-top: 100px;
 				}
 
 		}
@@ -3947,3 +3948,12 @@ header.major h2 {
 			/* adjust 'height' to position overlay content vertically */
 			height: 50%;
 		  }
+
+
+.icons a i {
+    font-size: 1.2em;
+}
+
+button + button {
+    margin-left: 10px;
+}

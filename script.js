@@ -8,6 +8,9 @@ async function loadPage(page) {
    if(page === "publications"){
     loadPublications();
    }
+
+   // scroll to top
+  window.scrollTo(0,0);
 }
 
 async function loadPublications() {
