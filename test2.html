@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Conditional Expectation and Takesaki's Theorem</title>
+
+  <meta name="description" content="An introduction to conditional expectations in von Neumann algebras, including a detailed explanation and proof of Takesaki's theorem.">
+  <meta name="keywords" content="Takesaki theorem, conditional expectation, von Neumann algebra, modular theory, operator algebras">
+
+  <!-- MathJax -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    body {
+      font-family: Georgia, serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+      line-height: 1.7;
+      color: #222;
+    }
+
+    h1, h2, h3 {
+      color: #2c3e50;
+      margin-top: 40px;
+    }
+
+    h1 {
+      font-size: 2.2em;
+    }
+
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    .meta {
+      color: #666;
+      font-size: 0.9em;
+      margin-bottom: 30px;
+    }
+
+    .download {
+      margin: 20px 0;
+    }
+
+    .download a {
+      background: #2c3e50;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .download a:hover {
+      background: #34495e;
+    }
+
+    .box {
+      background: #f4f6f8;
+      padding: 15px;
+      border-left: 4px solid #2c3e50;
+      margin: 20px 0;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Conditional Expectation and Takesaki's Theorem</h1>
+
+<div class="meta">
+  Your Name · 2026 · Lecture Notes in Operator Algebras
+</div>
+
+<div class="download">
+  <a href="https://tommygrigo.github.io/download/Conditional_Expectation_Lecture.pdf">
+    Download original slides (PDF)
+  </a>
+</div>
+
+<p>
+These notes provide an introduction to conditional expectations in von Neumann algebras
+and present the main ideas behind the proof of Takesaki's theorem.
+The material is aimed at graduate students with background in functional analysis.
+</p>
+
+---
+
+<h2>1. Von Neumann Algebras</h2>
+
+<p>
+A von Neumann algebra \(\mathcal{M}\) is a *-subalgebra of bounded operators
+on a Hilbert space that is closed in the weak operator topology.
+</p>
+
+---
+
+<h2>2. Conditional Expectations</h2>
+
+<p>
+A conditional expectation is a map
+\[
+E: \mathcal{M} \to \mathcal{N}
+\]
+satisfying:
+</p>
+
+<div class="box">
+\[
+E(N_1 X N_2) = N_1 E(X) N_2
+\]
+</div>
+
+<p>
+for all \(N_1, N_2 \in \mathcal{N}\).
+</p>
+
+---
+
+<h2>3. Modular Theory</h2>
+
+<p>
+Given a faithful normal state \(\phi\), one defines the modular operator \(\Delta\),
+which generates the modular automorphism group:
+</p>
+
+<div class="box">
+\[
+\sigma_t(X) = \Delta^{it} X \Delta^{-it}
+\]
+</div>
+
+---
+
+<h2>4. Takesaki's Theorem</h2>
+
+<div class="box">
+<strong>Theorem.</strong>  
+Let \(\mathcal{M}\) be a von Neumann algebra with faithful normal state \(\phi\),
+and let \(\mathcal{N} \subset \mathcal{M}\) be a von Neumann subalgebra invariant
+under the modular automorphism group. Then there exists a unique conditional
+expectation \(E: \mathcal{M} \to \mathcal{N}\) preserving \(\phi\).
+</div>
+
+---
+
+<h2>5. Idea of the Proof</h2>
+
+<p>
+The proof relies on modular theory and the invariance of \(\mathcal{N}\)
+under the modular group. One constructs the expectation using the modular operator
+and shows it satisfies the required properties.
+</p>
+
+---
+
+<h2>6. Further Remarks</h2>
+
+<ul>
+  <li>Connection to Tomita–Takesaki theory</li>
+  <li>Applications in quantum statistical mechanics</li>
+  <li>Relation to quantum probability</li>
+</ul>
+
+---
+
+<footer>
+<p>
+Keywords: Takesaki theorem, modular theory, conditional expectation, operator algebras.
+</p>
+</footer>
+
+</body>
+</html>
